@@ -88,7 +88,7 @@ pub struct Pipelines {
     pub backend: Option<PipelineBackend>,
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
+#[derive(Serialize, Deserialize, Debug, Clone, FromRow)]
 pub struct PipelineStep {
     pub id: i64,
     pub belongs_to: i64,
