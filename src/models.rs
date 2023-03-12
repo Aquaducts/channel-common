@@ -86,6 +86,9 @@ pub struct Pipelines {
     pub owned_by: i64,
     pub name: String,
     pub backend: Option<PipelineBackend>,
+    pub image: Option<String>,
+    pub release: Option<String>,
+    pub preferred_runner: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, FromRow)]
